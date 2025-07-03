@@ -22,10 +22,10 @@ function Projects() {
     },
     {
       id: 3,
-      title: "Project 3",
-      description: "Description of your third project. Highlight your skills and achievements.",
-      technologies: ["Technology 1", "Technology 2", "Technology 3"],
-      github: "#",
+      title: "RoomTracker Web Service",
+      description: "A web service prototype demonstrating frontend-backend communication for room availability tracking in libraries, featuring real-time status monitoring and modern UI design.",
+      technologies: ["Node.js", "Express.js", "JavaScript", "HTML5", "CSS3", "REST API"],
+      github: "https://github.com/SatelliteGear/RoomTracker",
       live: "#",
       image: "/src/assets/react.svg"
     }

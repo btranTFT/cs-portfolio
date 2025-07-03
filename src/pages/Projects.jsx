@@ -13,10 +13,10 @@ function Projects() {
     },
     {
       id: 2,
-      title: "Project 2",
-      description: "Description of your second project. Add details about what you built and what you learned.",
-      technologies: ["Technology 1", "Technology 2", "Technology 3"],
-      github: "#",
+      title: "SMILES Molecule Generation",
+      description: "Research project exploring deep generative models (CharRNN, GAN, VAE) to generate valid and novel molecules represented as SMILES strings for drug discovery applications.",
+      technologies: ["Python", "PyTorch", "Deep Learning", "Chemistry", "Machine Learning"],
+      github: "https://github.com/AbogAscended/Drug-Discovery",
       live: "#",
       image: "/src/assets/react.svg"
     },

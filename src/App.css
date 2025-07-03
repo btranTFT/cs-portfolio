@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'Thurkle';
+  src: url('/Thurkle.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.thurkle {
+  font-family: 'Thurkle', sans-serif !important;
+  letter-spacing: 0.04em;
+}
+
+body.dark {
+  --bg: linear-gradient(120deg, #181818 0%, #F58220 100%);
+  --text: #fff;
+  --container-bg: rgba(24, 24, 24, 0.95);
+  --accent: #F58220;
+  --card-bg: #232323;
+  --section-bg: #181818;
+  --link: #F58220;
+}
+body.light {
+  --bg: linear-gradient(120deg, #fff 0%, #F58220 100%);
+  --text: #181818;
+  --container-bg: rgba(255,255,255,0.95);
+  --accent: #F58220;
+  --card-bg: #f5f5f5;
+  --section-bg: #fff;
+  --link: #F58220;
+}
+body {
+  margin: 0;
+  font-family: 'Noto Sans', 'Segoe UI', Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem 1rem;
+  text-align: left;
+}
+
+.container {
+  margin-top: 2rem;
+  background: var(--container-bg);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+  padding: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent);
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #232526;
+}
+::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.project-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.project-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(245,130,32,0.15);
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 80px;
+  margin-bottom: 4.5rem;
+}
+
+@media (max-width: 600px) {
+  section {
+    padding: 2.5rem 0.5rem 1.5rem 0.5rem !important;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(16px); }
+}
+
+/* Card/Panel style for all cards */
+.card-panel {
+  background: var(--container-bg);
+  border-radius: 28px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.18);
+  padding: 2.5rem 2rem;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeInUp 0.8s cubic-bezier(.23,1.01,.32,1) both;
+}
+
+section h2, section h1 {
+  font-size: 2.7rem;
+  margin-bottom: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}

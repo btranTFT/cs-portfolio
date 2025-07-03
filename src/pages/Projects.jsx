@@ -34,7 +34,7 @@ function Projects() {
   return (
     <section id="projects" className="projects-section">
       <div className="container">
-        <h2 className="section-title">My Projects</h2>
+        <h2 className="section-title thurkle">My Projects</h2>
         <div className="projects-grid">
           {projects.map((project) => (
             <div key={project.id} className="project-card">
@@ -52,9 +52,6 @@ function Projects() {
                 <div className="project-links">
                   <a href={project.github} className="project-link" target="_blank" rel="noopener noreferrer">
                     GitHub
-                  </a>
-                  <a href={project.live} className="project-link" target="_blank" rel="noopener noreferrer">
-                    Live Demo
                   </a>
                 </div>
               </div>

@@ -9,7 +9,7 @@ function Projects() {
       technologies: ["React", "Vite", "CSS", "JavaScript"],
       github: "https://github.com/btranTFT/cs-portfolio",
       live: "#",
-      image: "/src/assets/react.svg"
+      image: "/portfolioimg.jpg"
     },
     {
       id: 2,
@@ -18,7 +18,7 @@ function Projects() {
       technologies: ["Python", "PyTorch", "Deep Learning", "Chemistry", "Machine Learning"],
       github: "https://github.com/AbogAscended/Drug-Discovery",
       live: "#",
-      image: "/src/assets/react.svg"
+      image: "/drugimg.jpg"
     },
     {
       id: 3,
@@ -27,7 +27,7 @@ function Projects() {
       technologies: ["Node.js", "Express.js", "JavaScript", "HTML5", "CSS3", "REST API"],
       github: "https://github.com/SatelliteGear/RoomTracker",
       live: "#",
-      image: "/src/assets/react.svg"
+      image: "/roomimg.jpg"
     }
   ];
 

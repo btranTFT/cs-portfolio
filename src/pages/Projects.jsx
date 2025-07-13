@@ -26,7 +26,7 @@ function Projects() {
       description: "A web service prototype demonstrating frontend-backend communication for room availability tracking in libraries, featuring real-time status monitoring and modern UI design.",
       technologies: ["Node.js", "Express.js", "JavaScript", "HTML5", "CSS3", "REST API"],
       github: "https://github.com/SatelliteGear/RoomTracker",
-      live: "#",
+      live: "https://cppstudyroombooking.vercel.app/",
       image: "/roomimg.jpg"
     }
   ];
@@ -53,6 +53,11 @@ function Projects() {
                   <a href={project.github} className="project-link" target="_blank" rel="noopener noreferrer">
                     GitHub
                   </a>
+                  {project.live !== "#" && (
+                    <a href={project.live} className="project-link" target="_blank" rel="noopener noreferrer">
+                      Live Site
+                    </a>
+                  )}
                 </div>
               </div>
             </div>
